@@ -1,0 +1,11 @@
+# Instructions vesktop/vencord (discord) matugen theme
+1. Drop into '~/.config/matugen/templates/midnight-discord.css'
+
+2. '~/.config/matugen/config.toml' and add:
+
+[templates.discord]
+input_path = '~/.config/matugen/templates/midnight-discord.css'
+output_path = '~/.var/app/dev.vencord.Vesktop/config/vesktop/themes/midnight.theme.css'
+
+3. Enable the theme in vesktop/vencord.
+the theme you will put in this folder here = '~/.var/app/dev.vencord.Vesktop/config/vesktop/themes/'
