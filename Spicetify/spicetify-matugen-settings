@@ -1,0 +1,28 @@
+# Instructions for spotify
+1. Install `spotify` with flatpak
+'flatpak install flathub com.spotify.Client'
+
+2. Log into spotify.
+
+3- Install spicetify = curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
+
+If an error appears about not finding the prefs file. the file is in this path = '~/.var/app/com.spotify.Client/config/spotify/prefs'
+
+Copy the path and paste it into = 'home/gidsd/.config/spicetify/config-xpui.ini'
+
+try again the same command and hope for get correct
+
+4- Drop spicetify.ini into = '~/config/matugen/templates/'
+
+5- Edit '~/.config/matugen/config.toml'
+
+[templates.spicetify]
+input_path = '~/.config/matugen/templates/spicetify.ini'
+output_path = '~/.config/spicetify/Themes/caelestia/color.ini'
+post_hook = '~/.config/matugen/scripts/spiceitfy_theme_apply.sh'
+
+6- Drop user.css into '~/.config/spicetify/Themes/caelestia/user.css'
+
+7- exec 'spicetify config current_theme caelestia'
+then: spicetify apply
+
